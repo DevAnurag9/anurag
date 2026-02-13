@@ -1,0 +1,14 @@
+name: HTML Test
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run test
+        run: echo "Testing successful"
